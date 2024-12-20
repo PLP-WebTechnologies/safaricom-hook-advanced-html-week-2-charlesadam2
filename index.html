@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Multimedia Webpage</h1>
+
+    <!-- Audio Element -->
+    <div class="media-container">
+        <h2>Play Audio</h2>
+        <audio controls>
+            <source src="C:\Users\glitch\Desktop\PLP academy\safaricom-hook-advanced-html-week-2-charlesadam2\static\jinja.mp3" type="audio/mp3">
+            <source src="your-audio-file.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Video Element -->
+    <div class="media-container">
+        <h2>Play Video</h2>
+        <video controls poster="your-poster-image.jpg">
+            <source src="C:\Users\glitch\Desktop\PLP academy\safaricom-hook-advanced-html-week-2-charlesadam2\static\jinjavid.mp4" type="video/mp4">
+            <source src="your-video-file.webm" type="video/webm">
+            Your browser does not support the video element.
+        </video>
+    </div>
+        <h1>User Registration Form</h1>
+        <div class="form-container">
+            <form action="your-server-side-script" method="post">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required maxlength="100" placeholder="Enter your full name">
+                </div>
+    
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Enter a password (min 8 characters)">
+                </div>
+    
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required min="18" placeholder="Enter your age (must be 18 or older)">
+                </div>
+    
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        
+                        <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                    </div>
+                </div>
+                
+    
+                <!-- Terms and Conditions -->
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                        <input type="checkbox" name="terms" required>
+                    </div>
+                </div>
+    
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </div>
+</body>
+</html>
